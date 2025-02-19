@@ -1,12 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     padding: 0;
     margin: 0;
-
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: white;
     color: black;
+    background-image: url("/landskapBG.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 
+h1 {
+    color: #000000;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    font-family: coiny;
+
+}
+
+.bold-text {
+    font-weight: 900;
+}
+p {
+    color: #ff5733;
+    font-size: 1em;
+    justify-content: center;
+    font-family: lato;
+}
+
+.bg-test {
+    border: 1px solid #333333;
+    height: 150px;
+    width: 150px;
+
+}
+
+.test-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.rgba {
+    background-color: rgba(0, 185, 65, 0.5);
+}
+.hex {
+    background-color: #ff5733;
+}
+
+.rgb {
+    background-color: rgba(255, 87, 51, 50%);
+}
+
+.hsl {
+   background-color:  hsl(240, 100%, 50%);
+}
+
+.color-test {
+    background-color: #4CAF50;
+    margin: 20px;
+    padding: 20px;
+}
+
+.linear-gradient {
+    background: linear-gradient(45deg, #000000, #ffffff, #000000)
+}
+
+.radial-gradient {
+    background: radial-gradient(circle, #000000, #ffffff)
 }
