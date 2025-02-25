@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lek-5/style.css">
+    <title>Formulär test</title>
+</head>
+
+<body>
+    <header>
+        <h1>Forms!</h1>
+    </header>
+
+
+    <form action="/login" method="post">
+   
+
+        <h2>Logga in</h2>
+
+        <div>
+            <label for="username">Användernamn:</label>
+            <input type="text" name="username" id="username" placeholder="Username">
+        </div>
+
+
+        <div>
+            <label for="password">Lösenord:</label>
+            <input type="password" name="password" id="password" placeholder="password">
+        </div>
+
+        <input type="submit" value="Logga in">
+    </form>
+
+    <hr>
+
+
+    <form action="/contact" method="post">
+        <h2>Kontakta oss</h2>
+        <fieldset>
+
+            <legend>om mig</legend>
+       
+        <div>
+            <label for="name">Namn: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+   
+        <div>
+            <label for="email">Mailadress: </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="message">Meddelande: </label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+</fieldset>
+        <div>
+            <label for="contact-type">Typ av ärende: </label>
+            <select name="contact-type" id="contact-type">
+                <option value="lagging">Det laggar</option>
+                <option value="improvments">Förbättringsförslag</option>
+                <option value="panic">Akut panik</option>
+            </select>
+        </div>
+
+        <button type="submit">Skicka</button>
+
+    </form>
+
+    <hr>
+
+    <div>
+
+        <form action="test" method="get">
+            <h2>Testformulär</h2>
+            <div>
+                <label for="number">Ärendenummer:</label>
+                <input type="number" name="number" id="number" min="1" max="5">
+            </div>
+            <div>
+                <label for="phone">Telefonummer:</label>
+                <input type="tel" class="phone" name="phone">
+            </div>
+
+            <div>
+                <label for="date">Datum: </label>
+                <input type="date" name="date" id="date">
+            </div>
+                    <!-- ID ÄR UNIKT PÅ SIDAN, KAN EJ VARA SAMMA-->
+            <div>
+                <label for="checkbox">Checkruta </label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+            </div>
+
+            <div>
+                <label for="radio">Radio: </label>
+                <input type="radio" name="radio" id="radio">
+            </div>
+
+            <div>
+                <label for="file">Fil: </label>
+                <input type="file" name="file" id="file">
+            </div>
+            
+            <div>
+                <button type="submit">Skicka</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
