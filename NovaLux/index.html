@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaLux - Framtidens SmartLamp</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/NovaLux/style.css">
 </head>
 
 <body>
@@ -50,10 +50,11 @@
                     <h3>Smart Funktionalitet</h3>
                     <p>Styr lampan enkelt med din smartphone.</p>
                 </div>
-            </div>
+                </div>
         </section>
-
-        <!-- Order-/Beställningsformulär med olika inputtyper -->
+    </div>
+    <!-- Order-/Beställningsformulär med olika inputtyper -->
+    <div class="container">
         <section id="order" class="order-form">
             <h2>Beställ NovaLux SmartLamp</h2>
             <form action="/submit-order" method="POST">
@@ -91,31 +92,37 @@
                 </div>
                 <!-- Färgval -->
                 <div class="form-group">
-                    <label for="color-selection" class="color-label">Välj en färg:</label>
+                    <label id="valjfarg" for="color-selection" class="color-label">Välj en färg:</label>
                     <div id="color-selection" class="color-options">
                         <div>
-                            <label class="color-option" style="background-color: white; border: 1px solid black;"><input
-                                    type="radio" name="color" value="white"></label>
+                            <label class="color-option" style="background-color: white; border: 1px solid black;">
+                                <input type="radio" name="color" value="white" id="white">
+                            </label>
                         </div>
                         <div>
-                            <label class="color-option" style="background-color: red;"><input type="radio" name="color"
-                                    value="red"></label>
+                            <label class="color-option" style="background-color: red;">
+                                <input type="radio" name="color" value="red">
+                            </label>
                         </div>
                         <div>
-                            <label class="color-option" style="background-color: blue;"><input type="radio" name="color"
-                                    value="blue"></label>
+                            <label class="color-option" style="background-color: blue;">
+                                <input type="radio" name="color" value="blue">
+                            </label>
                         </div>
                         <div>
-                            <label class="color-option" style="background-color: green;"><input type="radio"
-                                    name="color" value="green"></label>
+                            <label class="color-option" style="background-color: green;">
+                                <input type="radio" name="color" value="green">
+                            </label>
                         </div>
                         <div>
-                            <label class="color-option" style="background-color: yellow;"><input type="radio"
-                                    name="color" value="yellow"></label>
+                            <label class="color-option" style="background-color: rgb(236, 236, 18);">
+                                <input type="radio" name="color" value="yellow">
+                            </label>
                         </div>
                         <div>
-                            <label class="color-option" style="background-color: black;"><input type="radio"
-                                    name="color" value="black"></label>
+                            <label class="color-option" style="background-color: black;">
+                                <input type="radio" name="color" value="black">
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -136,19 +143,21 @@
                 <button type="submit">Skicka Beställning</button>
             </form>
         </section>
-
-        <!-- Enkel kontaktinformation -->
-        <section id="contact">
-            <h2>Kontakt</h2>
-
-            <p>Har du frågor? Kontakta oss på <a href="mailto:info@novalux.se">info@novalux.se</a> eller ring 08-123 456
-                78.</p>
-        </section>
     </div>
+    <!-- Enkel kontaktinformation -->
+    <div class="container">
+    <section id="contact">
+        <h2>Kontakt</h2>
 
+        <p>Har du frågor? Kontakta oss på <a href="mailto:info@novalux.se">info@novalux.se</a> eller ring 08-123 456
+            78.</p>
+    </section>
+    </div>
+    <div class="container">
     <footer>
         <p>&copy; 2025 NovaLux. Alla rättigheter förbehållna.</p>
     </footer>
+    </div>
 </body>
 
 </html>
