@@ -146,7 +146,7 @@ nav a {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 60px;
-    height: 88vh;
+    flex-grow: 1;
 }
 
 .order-form h2 {
@@ -338,6 +338,9 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         height: auto;
+    }
+    #order, #product {
+        scroll-margin-top: 135px;
     }
  
 
