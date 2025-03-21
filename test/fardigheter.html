@@ -1,49 +1,94 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsiv Portföljhemsida</title>
-  <!-- Google Fonts: Lato (för brödtext) och Roboto Slab (för rubriker) -->
+  <title>Färdigheter</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6b5dc1abe0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Wrapper med position: relative för att absoluta element (footer) kan placeras inuti -->
   <div class="wrapper">
     <header>
-      <h1>Färdigheter</h1>
+      <h1>Holgers Portfolio</h1>
     </header>
     <main>
-      <section>
-        <h2>Min Bakgrund</h2>
-        <h3>Utbildning och Erfarenhet</h3>
-        <p>Jag har en bakgrund inom webbutveckling och design, med flera års erfarenhet av att skapa moderna och responsiva webbplatser.</p>
+      <section class="skill-category">
+        <h2>Färdigheter</h2>
+        <div class="skill-grid">
+          <div class="skill-card">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML5</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 20%;"></div>
+            </div>
+            <p>Novice semantisk markup och responsiv design.</p>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 15%;"></div>
+            </div>
+            <p>Behärskar modern layout, Ramverksintegrering och enklare animationer</p>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-java"></i>
+            <h3>Java</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 15%;"></div>
+            </div>
+            <p>Grundläggande kunskaper</p>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-js"></i>
+            <h3>Javascript</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 1%;"></div>
+            </div>
+            <p>Inlärning pågår</p>
+          </div>
+        </div>
+
       </section>
-      <section>
-        <h2>Mina Intressen</h2>
-        <h3>Teknologi och Kreativitet</h3>
-        <p>Jag brinner för att kombinera teknik och kreativt skapande för att skapa unika digitala upplevelser.</p>
+      <section class="skill-category framtida">
+        <h2>Framtida färdigheter</h2>
+        <div class="skill-grid">
+        <div class="skill-card">
+          <ul class="skill-list">
+            <li title="React"><i class="fa-brands fa-react"></i></li>
+            <li title="Angular"><i class="fa-brands fa-angular"></i></li>
+            <li title="Vue"><i class="fa-brands fa-vuejs"></i></li>
+            <li title="TypeScript"><i class="fa-solid fa-code"></i></li>
+            <li title="Node.js"><i class="fa-brands fa-node-js"></i></li>
+          </ul>
+        </div>
+      </div>
       </section>
+
+
+
     </main>
-    <nav>
-      <!-- Dold checkbox för toggling på små skärmar -->
-      <input type="checkbox" id="menu-toggle">
-      <!-- Menyn (lista med länkar) -->
-      <ul class="menu">
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="om-mig.html">Om mig</a></li>
-        <li><a href="portfolj.html">Portfölj</a></li>
-        <li><a href="fardigheter.html">Färdigheter</a></li>
-      </ul>
-      <!-- Toggle-knapp, som endast visas i mobilvy -->
-      <label for="menu-toggle" class="menu-label">Meny</label>
-    </nav>
     <footer>
-      <p>&copy; Holger 2025</p>
+      <nav>
+        <input type="checkbox" id="menu-toggle">
+        <ul class="menu">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="om-mig.html">Om mig</a></li>
+          <li><a href="portfolj.html">Portfölj</a></li>
+          <li><a href="fardigheter.html">Färdigheter</a></li>
+        </ul>
+        <label for="menu-toggle" class="menu-label">Meny</label>
+      </nav>
     </footer>
   </div>
 </body>
+
 </html>

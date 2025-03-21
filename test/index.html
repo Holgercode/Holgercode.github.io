@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsiv Portföljhemsida</title>
-  <!-- Google Fonts: Lato (för brödtext) och Roboto Slab (för rubriker) -->
+  <title>Startsida</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6b5dc1abe0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <title>Holgers portfolio</title>
 </head>
+
 <body>
-  <!-- Wrapper med position: relative för att absoluta element (footer) kan placeras inuti -->
   <div class="wrapper">
     <header>
-      <h1>Holger Andersson</h1>
+      <h1>Holgers Portfolio</h1>
     </header>
     <main>
       <section>
-        <h2>Välkommen till min sida</h2>
-        <h3>Utbildning och Erfarenhet</h3>
-        <p>Hej! Jag heter Holger och här kan du följa min resa mot att bli en professionell backend webbutvecklare. Framöver kommer vi djupdyka i serverlogik, databashantering och API-utveckling.</p>
+        <h2>Välkommen</h2>
+        <p>Hej! Jag heter Holger och här kan du följa min resa mot att bli en professionell backend webbutvecklare.</p>
       </section>
-      <section>
-        <h2>Mina Intressen</h2>
-        <h3>Teknologi och Kreativitet</h3>
-        <p>Jag brinner för att kombinera teknik och kreativt skapande för att skapa unika digitala upplevelser.</p>
+      <section id="aktuellt">
+        <h2>aktuellt</h2>
+        <h3>LIA, lärande i arbete</h3>
+        <p>Jag söker en LIA-plats för kommande år och är särskilt intresserad av en arbetsplats som värdesätter att
+          sprida kunskap. Hör gärna av er så att vi kan boka in ett möte och se om våra mål och värderingar matchar.</p>
       </section>
+      <section class="kontakt-container">
+        <h2>Kontakt</h2>
+        <div class="profilbild-container">
+          <img src="profilbild.webp" alt="Profilbild">
+        </div>
+        <div class="kontakt-ikoner">
+          <a href="mailto:hogga89@gmail.com" title="Maila mig">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://github.com/holger-andersson" title="GitHub-profil" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="tel:+46768777447" title="Ring mig">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </section>
+
     </main>
-    <nav>
-      <!-- Dold checkbox för toggling på små skärmar -->
-      <input type="checkbox" id="menu-toggle">
-      <!-- Menyn (lista med länkar) -->
-      <ul class="menu">
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="om-mig.html">Om mig</a></li>
-        <li><a href="portfolj.html">Portfölj</a></li>
-        <li><a href="fardigheter.html">Färdigheter</a></li>
-      </ul>
-      <!-- Toggle-knapp, som endast visas i mobilvy -->
-      <label for="menu-toggle" class="menu-label">Meny</label>
-    </nav>
     <footer>
-      <p>&copy; Holger 2025</p>
+      <nav>
+        <input type="checkbox" id="menu-toggle">
+        <ul class="menu">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="om-mig.html">Om mig</a></li>
+          <li><a href="portfolj.html">Portfölj</a></li>
+          <li><a href="fardigheter.html">Färdigheter</a></li>
+        </ul>
+        <label for="menu-toggle" class="menu-label">Meny</label>
+      </nav>
     </footer>
   </div>
 </body>
+
 </html>
