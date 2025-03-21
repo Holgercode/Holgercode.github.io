@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsiv Portföljhemsida</title>
-  <!-- Google Fonts: Lato (för brödtext) och Roboto Slab (för rubriker) -->
+  <title>Portfölj</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6b5dc1abe0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Wrapper med position: relative för att absoluta element (footer) kan placeras inuti -->
-  <div class="wrapper">
-    <header>
-      <h1>Portfölj</h1>
-    </header>
-    <main>
-      <section id="projects">
-        <h2>Min Portfölj</h2>
-        <div class="project-container">
-          <div class="project-card">
-            <h3>Projekt 1</h3>
-            <p>En kort beskrivning av projekt 1. Här kan du beskriva syfte, teknik och utmaningar.</p>
-          </div>
-          <div class="project-card">
-            <h3>Projekt 2</h3>
-            <p>En kort beskrivning av projekt 2. Här kan du beskriva syfte, teknik och utmaningar.</p>
-          </div>
-          <!-- Lägg till fler projekt-kort här -->
-        </div>
-      </section>
-    </main>
-    
-    <nav>
-      <!-- Dold checkbox för toggling på små skärmar -->
-      <input type="checkbox" id="menu-toggle">
-      <!-- Menyn (lista med länkar) -->
-      <ul class="menu">
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="om-mig.html">Om mig</a></li>
-        <li><a href="portfolj.html">Portfölj</a></li>
-        <li><a href="fardigheter.html">Färdigheter</a></li>
-      </ul>
-      <!-- Toggle-knapp, som endast visas i mobilvy -->
-      <label for="menu-toggle" class="menu-label">Meny</label>
-    </nav>
-    <footer>
-      <p>&copy; Holger 2025</p>
-    </footer>
-  </div>
+    <div class="wrapper">
+        <header>
+            <h1>Holgers Portfolio</h1>
+        </header>
+        <main>
+            <h2>Portfölj</h2>
+            <section>
+                <div class="projekt-container">
+                    <div class="text-kort">
+                        <h3>tradekidd</h3>
+                        <p>En tradingbot som låter dig själv, snabbt och smidigt, välja de indikatorer du tror på för
+                            att lyckas i din automatiserade trading. Erbjuder trading på Avanza, Nordnet och IGmarkets.
+                            Endast tillgänglig för Index-trading idag. </p>
+                    </div>
+                    <div class="text-kort">
+                        <h3>Kompositkungen</h3>
+                        <p>En hjälpande hand för kompositbeläggare. Kompositkungen assisterar med att beräkna exakt hur
+                            mycket av varje produkt som ska blandas i materialet. Eftersom komposit kan bestå av två
+                            eller fler komponenter med olika blandningsförhållanden. Aktuella blandningsförhållanden
+                            hämtas direkt från produktägares digitala datablad.</p>
+                    </div>
+                    <div class="text-kort">
+                        <h3>DoEET</h3>
+                        <p>En applikation för att hantera uppgifter. Här kan du skapa specifika to-do listor, redigera,
+                            sortera, markera eller radera innehållet.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <input type="checkbox" id="menu-toggle">
+                <ul class="menu">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="om-mig.html">Om mig</a></li>
+                    <li><a href="portfolj.html">Portfölj</a></li>
+                    <li><a href="fardigheter.html">Färdigheter</a></li>
+                </ul>
+                <label for="menu-toggle" class="menu-label">Meny</label>
+            </nav>
+        </footer>
+    </div>
 </body>
+
 </html>
